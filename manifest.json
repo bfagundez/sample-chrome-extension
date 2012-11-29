@@ -1,0 +1,16 @@
+{
+  "name": "My extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "The first extension that I made.",
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": [ "jquery-1.8.3.min.js", "myscript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
